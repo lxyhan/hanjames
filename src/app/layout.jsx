@@ -1,6 +1,6 @@
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
-
+import { Analytics } from "@vercel/analytics/react";
 import '@/styles/tailwind.css'
 
 export const metadata = {
@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <div className="flex w-full">
             <Layout>{children}</Layout>
+            <Analytics /> {/* Add Vercel Analytics here */}
           </div>
         </Providers>
       </body>
