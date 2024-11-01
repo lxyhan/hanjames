@@ -6,45 +6,78 @@ import logoAnimaginary from '@/images/logos/animaginary.svg'
 import logoCosmos from '@/images/logos/cosmos.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoMarkyt from '@/images/logos/markyt.png'
+import logoHarled from '@/images/logos/harled.png'
+import logoReact from '@/images/logos/react.png' 
+import logoSvelte from '@/images/logos/svelte.png' 
+import logoJs from '@/images/logos/js.png' 
 
 const projects = [
   {
     name: 'Markyt',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'As a the lead developer at Markyt, my work involved building and maintaining a web app using industry standard practices, implementing Stripe payment integration, and ensuring proper user authentication protocols. Working with SvelteKit and Firebase (storage, firestore, auth) tools have allowed me to speed up development immensely without sacrificing the scalability and quality of my code.',
+    link: { href: 'https://github.com/lxyhan/markyt-development', label: 'https://github.com/lxyhan/markyt-development' },
+    logo: logoMarkyt,
   },
   {
     name: 'Close to Home',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      'Close to Home offers a comprehensive disaster management platform that uses AI-powered heatmaps to identify high-impact zones while also serving as a hub for user-generated stories, articles, and donation links. Our interactive map displays real-time disaster updates through geotagged posts, allowing users to not only see where aid is needed but also engage emotionally through personal narratives.',
+    link: { href: 'https://github.com/lxyhan/NewHacks', label: 'https://github.com/lxyhan/NewHacks' },
+    logo: logoHelioStream,
   },
   {
     name: 'Harled Equipment Tracking System',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
+      'UI Design Internship project and backend architecture planning for a Equipment Tracking System for the Royal Canadian Air Force.',
+    link: { href: 'https://harled.ca/projects/equipment_tracking_system', label: 'https://harled.ca/projects/' },
+    logo: logoHarled,
   },
   {
-    name: 'AccuWeather',
+    name: 'Weather Forecast App',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
+      'Developed a weather dashboard with real-time analytics using Chart.js, integrating OpenWeatherAPI for data and Unsplash API for dynamic imagery. Tracks Sunrise / Sunset, Precipitation Data, and 12-hour realtime Forecast.',
+    link: { href: 'https://lxyhan.github.io/Weather-App/src/index.html', label: 'https://lxyhan.github.io/Weather-App/src/index.html' },
+    logo: logoJs,
   },
   {
     name: 'Todo-List',
     description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
+      'Developed a feature-rich task management app with full CRUD functionality, utilizing Firebase Firestore for real-time data persistence and Firebase Authentication for secure user access. Used Sveltekit, a modern front-end framework to ensure proper state management and secure API routes.',
+    link: { href: 'https://lxyhan2.vercel.app/todo', label: 'https://lxyhan2.vercel.app/todo' },
+    logo: logoSvelte,
+  },
+  {
+    name: 'Personal Site (this website lol)',
+    description:
+      'Next JS / React Website developed for my personal blog and portfolio. Utilizes Tailwind CSS for styling, prism.js, and Vercel for deployment.',
+    link: { href: '/projects', label: 'https://hanjames.vercel.app/projects' },
+    logo: logoReact,
+  },
+  {
+    name: 'YiRenovate',
+    description:
+      'A Front-End Static Site I developed for a local Toronto Renovation Company using Boostrap 5',
+    link: { href: 'https://yirenovation.ca/', label: 'https://yirenovation.ca/' },
+    logo: logoJs,
+  },
+  {
+    name: 'Country Image API Map',
+    description:
+      'A Front-End Static Site I developed to learn more about fast Image rendering using Svelte and Unsplash API',
+    link: { href: 'https://lxyhan2.vercel.app/blog/', label: 'https://lxyhan2.vercel.app/blog' },
     logo: logoOpenShuttle,
   },
+  {
+    name: 'ScholarLink',
+    description:
+      'A Full=Stack Web App I developed to help students find tutoring. Utilizes SASS, Firebase, and Boostrap JS.',
+    link: { href: 'https://www.youtube.com/watch?v=Yl0gZv1QwDc', label: 'https://www.youtube.com/watch?v=Yl0gZv1QwDc' },
+    logo: logoJs,
+  },
 ]
+
 
 function LinkIcon(props) {
   return (
@@ -65,8 +98,8 @@ export const metadata = {
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+      title="Recent Projects"
+      intro="My main area of expertise is in front-end web/mobile development, but I have experience in full-stack development as well. Here are some of the projects I have worked on."
     >
       <ul
         role="list"
