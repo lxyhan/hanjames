@@ -20,6 +20,7 @@ import image2 from '@/images/photos/dundas.jpg'
 import image3 from '@/images/photos/marathon-1.jpg'
 import image4 from '@/images/photos/team.jpg';
 import image5 from '@/images/photos/hack.jpg'
+
 import { getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
