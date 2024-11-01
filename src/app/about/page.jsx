@@ -71,7 +71,7 @@ export default function About() {
             As a programmer, I try to avoid dogmatic specialization. I love learning about design, full-stack development, machine learning, and project management. As an athlete, I aim for hybrid training. I swam competitively for 3 years, run a 5-day strength training schedule, and try to <a href="/articles/finding-strength"><u>average 20-30km</u></a> weekly running.
             </p>
             <p>
-            In doing so, I hope to synthesize technologies and skills that enable me to adapt in a rapidly changing tech landscape amongst a sea of students seeking optimization. The trait I admire most is resilience.
+            In doing so, I really hope to synthesize technologies and skills that enable me to adapt in a rapidly changing tech landscape amongst a sea of students seeking optimization. The trait I admire most is resilience.
             </p>
             <p>
             In high school, I spent much of my time involved in competitive debate. Since then, that interest has shifted, but my love for writing remains. This site is an attempt at presenting <a href="/articles"><u> a few underdeveloped thoughts</u></a> of my own, and many more [better ideas](/) from my readings.
