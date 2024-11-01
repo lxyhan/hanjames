@@ -116,8 +116,7 @@ function MobileNavigation(props) {
             <MobileNavItem href="/about">About</MobileNavItem>
             <MobileNavItem href="/articles">Articles</MobileNavItem>
             <MobileNavItem href="/projects">Projects</MobileNavItem>
-            <MobileNavItem href="/speaking">Speaking</MobileNavItem>
-            <MobileNavItem href="/uses">Uses</MobileNavItem>
+            <MobileNavItem href="/uses">Tech Stack</MobileNavItem>
           </ul>
         </nav>
       </PopoverPanel>
@@ -135,8 +134,8 @@ function NavItem({ href, children }) {
         className={clsx(
           'relative block px-3 py-2 transition',
           isActive
-            ? 'text-teal-500 dark:text-teal-400'
-            : 'hover:text-teal-500 dark:hover:text-teal-400',
+            ? 'text-blue-500 dark:text-blue-400'
+            : 'hover:text-blue-500 dark:hover:text-blue-400',
         )}
       >
         {children}
@@ -155,8 +154,7 @@ function DesktopNavigation(props) {
         <NavItem href="/about">About</NavItem>
         <NavItem href="/articles">Articles</NavItem>
         <NavItem href="/projects">Projects</NavItem>
-        <NavItem href="/speaking">Speaking</NavItem>
-        <NavItem href="/uses">Uses</NavItem>
+        <NavItem href="/uses">Stack</NavItem>
       </ul>
     </nav>
   )

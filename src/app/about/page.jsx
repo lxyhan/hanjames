@@ -9,7 +9,7 @@ import {
   LinkedInIcon,
   XIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import portraitImage from '@/images/portrait-3.jpg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -58,20 +58,23 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-5xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-          Hi! I&#39;m James.          
+          My name is James.          
           </h1>
-          <h1 className="text-3xl font-bold tracking-tight text-zinc-800 sm:text-3xl dark:text-zinc-100">
-          Computer Science and Economics Student at the University of Toronto.
+          <h1 className="text-xl font-bold tracking-tight text-zinc-800 sm:text-xl dark:text-zinc-100">
+          I am a sophomore computer science and economics student at the University of Toronto.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
             My philosophy is to embrace being multi-disciplinary and adaptable.
             </p>
             <p>
-            As a programmer, I avoid specialization. I love design, full-stack development, machine learning, and project management, as well as studying pedagogy as a teacher. As an athlete, I aim for hybrid training. I swam competitively for 3 years, run a 5-day strength training schedule, and try to [average 20-30km mileage](/posts/2024-10-19/) weekly running. Are you a UofT student? See what we&#39;re up to at the UofT Run Club.
+            As a programmer, I try to avoid dogmatic specialization. I love learning about design, full-stack development, machine learning, and project management. As an athlete, I aim for hybrid training. I swam competitively for 3 years, run a 5-day strength training schedule, and try to <a href="/articles/finding-strength"><u>average 20-30km</u></a> weekly running.
             </p>
             <p>
-            In doing so, I hope to synthesize technologies and skills that enable me to adapt in a rapidly changing tech landscape amongst a sea of students seeking optimization. The trait I admire most is resilience, and that which I admire least is a lack of humility. In high school, I spent much of my time involved in competitive debate. Since then, that interest has shifted, but my love for writing remains. This site is an attempt at presenting [a few underdeveloped thoughts](/posts/) of my own, and many more [better ideas](/) from my readings.
+            In doing so, I hope to synthesize technologies and skills that enable me to adapt in a rapidly changing tech landscape amongst a sea of students seeking optimization. The trait I admire most is resilience.
+            </p>
+            <p>
+            In high school, I spent much of my time involved in competitive debate. Since then, that interest has shifted, but my love for writing remains. This site is an attempt at presenting <a href="/articles"><u> a few underdeveloped thoughts</u></a> of my own, and many more [better ideas](/) from my readings.
             </p>
           </div>
         </div>
@@ -80,10 +83,10 @@ export default function About() {
             <SocialLink href="https://www.instagram.com/_lxyhan/" icon={InstagramIcon} className="mt-4">
               Follow on Instagram
             </SocialLink>
-            <SocialLink href="#" icon={GitHubIcon} className="mt-4">
+            <SocialLink href="https://github.com/lxyhan" icon={GitHubIcon} className="mt-4">
               Follow on GitHub
             </SocialLink>
-            <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
+            <SocialLink href="https://www.linkedin.com/in/jameshan27/" icon={LinkedInIcon} className="mt-4">
               Follow on LinkedIn
             </SocialLink>
             <SocialLink

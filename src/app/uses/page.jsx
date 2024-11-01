@@ -12,98 +12,96 @@ function ToolsSection({ children, ...props }) {
   )
 }
 
-function Tool({ title, href, children }) {
+function Tool({ title, children }) {
   return (
     <Card as="li">
-      <Card.Title as="h3" href={href}>
-        {title}
-      </Card.Title>
+      <Card.Title as="h3">{title}</Card.Title>
       <Card.Description>{children}</Card.Description>
     </Card>
   )
 }
 
 export const metadata = {
-  title: 'Uses',
-  description: 'Software I use, gadgets I love, and other things I recommend.',
+  title: 'Tech Stack & Skills',
+  description: 'An overview of the technologies I use and my skill set.',
 }
 
 export default function Uses() {
   return (
     <SimpleLayout
-      title="Software I use, gadgets I love, and other things I recommend."
-      intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
+      title="My Tech Stack"
+      intro="Here's a list of languages, frameworks, and tools I use to build software, design, and stay productive."
     >
       <div className="space-y-20">
-        <ToolsSection title="Workstation">
-          <Tool title="16” MacBook Pro, M1 Max, 64GB RAM (2021)">
-            I was using an Intel-based 16” MacBook Pro prior to this and the
-            difference is night and day. I’ve never heard the fans turn on a
-            single time, even under the incredibly heavy loads I put it through
-            with our various launch simulations.
+        <ToolsSection title="Languages">
+          <Tool title="Python">
+            My go-to language for data science, machine learning, and automation.
           </Tool>
-          <Tool title="Apple Pro Display XDR (Standard Glass)">
-            The only display on the market if you want something HiDPI and
-            bigger than 27”. When you’re working at planetary scale, every pixel
-            you can get counts.
+          <Tool title="R">
+            Used primarily for statistical analysis and data visualization.
           </Tool>
-          <Tool title="IBM Model M SSK Industrial Keyboard">
-            They don’t make keyboards the way they used to. I buy these any time
-            I see them go up for sale and keep them in storage in case I need
-            parts or need to retire my main.
+          <Tool title="Java">
+            I leverage Java for building robust backend applications.
           </Tool>
-          <Tool title="Apple Magic Trackpad">
-            Something about all the gestures makes me feel like a wizard with
-            special powers. I really like feeling like a wizard with special
-            powers.
+          <Tool title="HTML/CSS & Javascript">
+            The foundation of all my web development projects.
           </Tool>
-          <Tool title="Herman Miller Aeron Chair">
-            If I’m going to slouch in the worst ergonomic position imaginable
-            all day, I might as well do it in an expensive chair.
+          <Tool title="Typescript & JSX">
+            I rely on these for type-safe frontend development in frameworks like React.
+          </Tool>
+          <Tool title="Svelte">
+            A powerful, reactive framework I enjoy using for lightweight web apps.
+          </Tool>
+          <Tool title="LaTeX">
+            My choice for creating professional and academic documents.
           </Tool>
         </ToolsSection>
-        <ToolsSection title="Development tools">
-          <Tool title="Sublime Text 4">
-            I don’t care if it’s missing all of the fancy IDE features everyone
-            else relies on, Sublime Text is still the best text editor ever
-            made.
+
+        <ToolsSection title="Frameworks & Tools">
+          <Tool title="Git">
+            Version control for managing code changes across projects.
           </Tool>
-          <Tool title="iTerm2">
-            I’m honestly not even sure what features I get with this that aren’t
-            just part of the macOS Terminal but it’s what I use.
+          <Tool title="React & Redux">
+            Core frameworks I use to build dynamic UIs with state management.
           </Tool>
-          <Tool title="TablePlus">
-            Great software for working with databases. Has saved me from
-            building about a thousand admin interfaces for my various projects
-            over the years.
+          <Tool title="SvelteKit & Next.js">
+            My go-to frameworks for modern frontend development with SSR capabilities.
+          </Tool>
+          <Tool title="Tailwind & Bootstrap 5">
+            CSS frameworks for rapid UI development with responsive design.
+          </Tool>
+          <Tool title="SASS">
+            Helps me manage CSS more efficiently by introducing variables and nesting.
+          </Tool>
+          <Tool title="Chart.js">
+            I use this for visualizing data within web apps.
+          </Tool>
+          <Tool title="Maven">
+            A tool I use for building and managing Java-based projects.
+          </Tool>
+          <Tool title="Firebase Storage/Auth/Database">
+            I leverage Firebase for backend services like authentication and data storage.
+          </Tool>
+          <Tool title="Vercel">
+            My preferred platform for deploying Next.js applications.
+          </Tool>
+          <Tool title="Prisma">
+            An ORM tool I use to simplify database operations.
+          </Tool>
+          <Tool title="Stripe">
+            A powerful API I use to integrate payment processing.
+          </Tool>
+          <Tool title="Clerk Authentication">
+            A modern authentication solution I use for user management.
           </Tool>
         </ToolsSection>
-        <ToolsSection title="Design">
+
+        <ToolsSection title="Design Tools">
+          <Tool title="Adobe Premiere Pro, Illustrator, Photoshop, Lightroom, AfterEffects">
+            I use these tools for video editing, graphic design, and photo editing.
+          </Tool>
           <Tool title="Figma">
-            We started using Figma as just a design tool but now it’s become our
-            virtual whiteboard for the entire company. Never would have expected
-            the collaboration features to be the real hook.
-          </Tool>
-        </ToolsSection>
-        <ToolsSection title="Productivity">
-          <Tool title="Alfred">
-            It’s not the newest kid on the block but it’s still the fastest. The
-            Sublime Text of the application launcher world.
-          </Tool>
-          <Tool title="Reflect">
-            Using a daily notes system instead of trying to keep things
-            organized by topics has been super powerful for me. And with
-            Reflect, it’s still easy for me to keep all of that stuff
-            discoverable by topic even though all of my writing happens in the
-            daily note.
-          </Tool>
-          <Tool title="SavvyCal">
-            Great tool for scheduling meetings while protecting my calendar and
-            making sure I still have lots of time for deep work during the week.
-          </Tool>
-          <Tool title="Focus">
-            Simple tool for blocking distracting websites when I need to just do
-            the work and get some momentum going.
+            My go-to design tool for UI/UX projects and collaborative work.
           </Tool>
         </ToolsSection>
       </div>
